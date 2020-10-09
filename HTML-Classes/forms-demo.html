@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form action="success.html" method="POST">
+    <label for="tbname">Enter Name</label>
+     <input type="text" id="tbname" name="tbname" placeholder="Enter Name"> <br>
+    <label for="tbemail">Enter Email</label> <input type="email" id="tbemail" name="tbemail" placeholder="Enter Email"><br>
+    DOB <input type="date" id="dob" name="dob"><br>
+    Gender : <input type="radio" value="male" name="gender">Male
+    <input type="radio" value="female" name="gender" checked>Female <br>
+    Languages Known : <input type="checkbox" value="english" name="lang">English 
+    <input type="checkbox" value="telugu" name="lang">Telugu
+    <input type="checkbox" value="hindi" name="lang">Hindi
+    <input type="checkbox" value="tamil" name="lang">Tamil <br> 
+    Password <input type="password" name="password" id="password" placeholder="min 6 chars" required><br>
+<label for="address">Address</label>
+    <textarea name="address" id="address" cols="30" rows="5"></textarea><br>
+
+    Country : <select name="countries" id="country">
+        <option value="india">India</option>
+        <option value="srilanka">Srilanka</option>
+        <option value="usa">USA</option>
+    </select>
+
+    Upload image <input type="file" id="fimage" name="fimage">
+    <input type="submit" value="Register"> <input type="reset" value="Clear">
+</form>
+
+</body>
+</html>
