@@ -1,0 +1,14 @@
+1.Write a query which displays ename, Department Code, Department Name, and Salary for all staff who earns more than 2000.
+
+2.Display empno, ename, Department Name, and his manager’s number and name. Label the columns Staff#, Staff, Mgr#, Manager. 
+
+3.Display the Manager Name and the total strength of his/her team.
+
+4. Write a query to display number of people in each Department. Output should display Department Code, Department Name and Number of People
+
+5. Write a query to change the job and deptno of employee whose empno is 7698 to the job and deptno of employee having empno 7788. 
+
+6. Delete the details of department whose department name is ‘SALES’. 
+
+7. Write a query to change the deptno of employee with empno 7788 to that of employee having empno 7698. 
+
