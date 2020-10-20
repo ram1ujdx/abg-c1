@@ -1,6 +1,8 @@
 package com.cg;
 
+import java.util.Arrays;
 import java.util.Scanner;
+import static java.util.Arrays.*;
 
 public class ArraysDemo {
 
@@ -18,6 +20,12 @@ public class ArraysDemo {
 //			System.out.print(nums[i]+"\t");
 //		}
 		
+		for(int value:nums) {
+			System.out.print(value+"\t");
+		}
+		
+		sort(nums);
+		System.out.println("After Sorting :");
 		for(int value:nums) {
 			System.out.print(value+"\t");
 		}
