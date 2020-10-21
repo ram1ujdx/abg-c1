@@ -4,14 +4,16 @@ public class InterfaceExample {
 
 	public static void main(String[] args) {
 		
-		Intr1 obj1=new MyClass();
+		Object obj1=new MyClass();
 		Intr2 obj2=new MyClass();
+//		
+//		obj1.fun1();
+//		obj1.show();
+//		obj1.superFun();
+//		obj2.fun2();
+//		obj2.show();
 		
-		obj1.fun1();
-		obj1.show();
-		obj1.superFun();
-		obj2.fun2();
-		obj2.show();
+		System.out.println(obj1 instanceof SuperInterface);
 		
 
 	}

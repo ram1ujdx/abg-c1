@@ -2,7 +2,7 @@ package com.cg;
 
 public class Printer extends Machine {
 
-	int inkLevel;
+	final int inkLevel=20;
 	
 	public Printer() {
 		super(10);
@@ -18,6 +18,8 @@ public class Printer extends Machine {
 		super.print();
 		System.out.println("Printing Started...");
 	}
+	
+	
 	
 	
 	

@@ -11,7 +11,7 @@ public abstract class Machine {
 	
 	public abstract void start();
 	
-	public void stop() {
+	public final void stop() {
 		System.out.println("Shutting Down...");
 	}
 	public void print() {
