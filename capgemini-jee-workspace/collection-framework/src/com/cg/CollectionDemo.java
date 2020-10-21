@@ -1,35 +1,58 @@
 package com.cg;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Vector;
+
 
 public class CollectionDemo {
 
 	public static void main(String[] args) {
 		
 		@SuppressWarnings("rawtypes")
-		List items=new ArrayList();
+		List items=Arrays.asList(10,25,30,5,15);
 		
+		List newItems=new LinkedList();
 		
-		items.add("Mahesh");
-		items.add(125);
-		items.add(true);
-		items.add(5.25);
-		items.add(125);
-		items.add(2, 500);
-//		items.remove(true);
+		newItems.addAll(items);
 		
-//		System.out.println(items);
-		
-		for(Object obj:items) {
-			System.out.println(obj);
+		System.out.println("Contents : ");
+		for(int i=0;i<items.size();i++) {
+			System.out.println(items.get(i));
 		}
 		
 		
+		int sum=0;
 		
+		for(Object item:items) {
+			sum+=(int)item;
+		}
 		
+		System.out.println("Sum = "+sum);
+		
+
+		int min,max;
+//		min=max=items.get(0);
+//		for(int item:items) {
+//			if(item>max) {
+//				max=item;
+//			}
+//			if(item<min) {
+//				min=item;
+//			}
+//		}
+//		
+
+		
+		min=(int) Collections.min(items);
+		max=(int) Collections.max(items);
+		System.out.println("Max = "+max);
+		System.out.println("Min = "+min);
 
 	}
 
