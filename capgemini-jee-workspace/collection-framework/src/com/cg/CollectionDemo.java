@@ -17,9 +17,10 @@ public class CollectionDemo {
 		@SuppressWarnings("rawtypes")
 		List items=Arrays.asList(10,25,30,5,15);
 		
-		List newItems=new LinkedList();
+		List<Object> newItems=new LinkedList<>();
 		
 		newItems.addAll(items);
+		newItems.add(10);
 		
 		System.out.println("Contents : ");
 		for(int i=0;i<items.size();i++) {

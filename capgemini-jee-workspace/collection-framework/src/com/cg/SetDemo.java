@@ -6,18 +6,20 @@ import java.util.Set;
 public class SetDemo {
 
 	public static void main(String[] args) {
-		Set items=new HashSet();
+		Set<String> items=new HashSet<String>();
 		
-		items.add(10);
+	
 		items.add("Rahul");
 		items.add("Mohan");
-	
+//		items.add(true);
 		items.add("Mohan");
-		items.add(true);
-		items.add(5<3);
+
+
 		
-		System.out.println(items);
-		
+		for(Object item:items) {
+			System.out.println(((String)item).length());
+		}
+	
 		
 		
 	}
