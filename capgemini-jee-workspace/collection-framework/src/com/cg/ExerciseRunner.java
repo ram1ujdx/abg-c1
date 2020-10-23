@@ -10,9 +10,8 @@ public class ExerciseRunner {
 		
 		List<Integer> items=Arrays.asList(12,201,510,325,32);
 		System.out.println("Original Array..");
-		for(int item:items) {
-			System.out.print(item+"\t");
-		}
+		
+		items.forEach( item -> System.out.println(item));
 		
 		CollectionExercise obj=new CollectionExercise();
 		

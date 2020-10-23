@@ -17,10 +17,11 @@ public class MapDemo {
 //		String val=numsMap.get(4);
 //		System.out.println(val);
 		
-		for(int num:numsMap.keySet()) {
-			System.out.println(num+" -- "+numsMap.get(num));
-		}
+//		for(int num:numsMap.keySet()) {
+//			System.out.println(num+" -- "+numsMap.get(num));
+//		}
 		
+		numsMap.forEach((k,v)->System.out.println(k+" -- "+v));
 		
 		
 		

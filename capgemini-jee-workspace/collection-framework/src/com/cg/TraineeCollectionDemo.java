@@ -7,21 +7,14 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
-class CompareByAge implements Comparator<Trainee>{
 
-	@Override
-	public int compare(Trainee t1, Trainee t2) {
-		 return t1.getAge()-t2.getAge();
-	}
-	
-}
 
 
 public class TraineeCollectionDemo {
 
 	public static void main(String[] args) {
 		
-		Set<Trainee> trainees=new TreeSet<>(new CompareByAge());
+		Set<Trainee> trainees=new TreeSet<>((t1,t2)->t1.getAge()-t2.getAge());
 		
 		trainees.add(new Trainee("Rahul", 25, "rahul@gamil.com"));
 		trainees.add(new Trainee("Mahesh", 26, "mahesh@gamil.com"));
