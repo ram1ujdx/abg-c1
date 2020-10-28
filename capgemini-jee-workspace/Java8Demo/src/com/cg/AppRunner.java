@@ -10,7 +10,7 @@ public class AppRunner {
 
 	public static void main(String[] args) {
 
-		MyInterface obj = (int x) -> {
+		MyInterface obj = x -> {
 									System.out.println("Calculation Processing...");
 									return x * x;
 								};

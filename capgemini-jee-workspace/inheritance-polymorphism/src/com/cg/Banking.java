@@ -12,6 +12,8 @@ public class Banking {
 		account.setBalance(2000);
 		
 		account.deposit(5000);
+		
+		person.setAccount(account);
 		System.out.println("Balance = "+account.getBalance());
 		
 		System.out.println(account);
