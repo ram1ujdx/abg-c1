@@ -2,6 +2,7 @@ package com.cg;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
@@ -19,7 +20,8 @@ public class InsertStudent {
 				System.out.println("Connection Successful");
 			}
 
-			Statement smt = con.createStatement();
+//			Statement smt = con.createStatement();
+			PreparedStatement psmt=con.prepareStatement("insert into student values(?,?,?,?)");
 			
 			String sname,id;
 			long phoneNo;
@@ -34,8 +36,15 @@ public class InsertStudent {
 			System.out.println("Enter Phone : ");
 			phoneNo=scan.nextLong();
 			
+			psmt.setLong(4, phoneNo);
+			psmt.setString(1, id);
+			psmt.setString(2, sname);
+			psmt.setFloat(3, marks);
 			
-			int rowsUpdateCount=smt.executeUpdate("insert into student values('"+id+"','"+sname+"',"+marks+","+phoneNo+")");
+			
+			// int rowsUpdateCount=smt.executeUpdate("insert into student values('"+id+"','"+sname+"',"+marks+","+phoneNo+")");
+			
+			int rowsUpdateCount=psmt.executeUpdate();
 			
 			if(rowsUpdateCount>0) {
 				System.out.println("Inserted Successfully");

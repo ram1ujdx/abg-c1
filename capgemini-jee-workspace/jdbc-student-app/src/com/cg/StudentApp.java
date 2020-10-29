@@ -1,10 +1,11 @@
 package com.cg;
 import java.sql.*;
+import java.util.Scanner;
 
 public class StudentApp {
 
 	public static void main(String[] args) {
-		
+		Scanner scan=new Scanner(System.in);
 		try {
 			Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521/xe",
 														"system","password");
@@ -15,19 +16,27 @@ public class StudentApp {
 		
 			Statement smt=con.createStatement();
 			
-			ResultSet rs=smt.executeQuery("select * from student");
-		
+			System.out.println("Enter Student ID : ");
+			String id=scan.nextLine();
+			
+			ResultSet rs=smt.executeQuery("select * from student where id='"+ id+"'");
+			boolean found=false;
 			while(rs.next()) {
+				found=true;
 				System.out.print("ID - "+rs.getString("ID"));
 				System.out.print("\tNAME - "+rs.getString("SNAME"));
 				System.out.print("\tMARKS - "+rs.getFloat("MARKS"));
 				System.out.println("\tPHONE - "+rs.getLong("PHONE_NO"));
 			}
+			
+			if(!found) {
+				System.out.println("No Student found with ID : "+id);
+			}
 		
 		
 		
 		} catch (SQLException e) {
-			System.err.println("Connection Unsuccessful");
+			e.printStackTrace();
 		}
 		
 		
