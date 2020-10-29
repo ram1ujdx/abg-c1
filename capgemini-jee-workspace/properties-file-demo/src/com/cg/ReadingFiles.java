@@ -15,7 +15,7 @@ public class ReadingFiles {
 			Properties props=new Properties();
 			props.load(input);
 			
-			System.out.println(props.getProperty("name"));
+			System.out.println(props.getProperty("city"));
 			
 			
 			
