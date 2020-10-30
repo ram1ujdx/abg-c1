@@ -29,19 +29,22 @@ public class StudentServiceImpl implements IStudentService{
 	@Override
 	public Student updateStudent(Student student) throws SQLException {
 		// TODO Auto-generated method stub
-		return null;
+		if(student.getMarks()>100 || student.getMarks()<0) {
+			throw new InvalidMarksException("Invalid Marks - "+student.getMarks());
+		}
+		return repo.updateStudent(student);
 	}
 
 	@Override
 	public boolean deleteStudent(String studentId) throws SQLException {
 		// TODO Auto-generated method stub
-		return false;
+		return repo.deleteStudent(studentId);
 	}
 
 	@Override
 	public List<Student> getAllStudents() throws SQLException {
 		// TODO Auto-generated method stub
-		return null;
+		return repo.getAllStudents();
 	}
 
 }
