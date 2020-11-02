@@ -12,6 +12,7 @@ class ArrayListOps {
 		Collections.reverse(list);
 		return list;
 	}
+	
 
 
 public ArrayList<Integer> changeList(ArrayList<Integer> list, int m, int n){

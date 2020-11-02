@@ -12,7 +12,9 @@ class Activity{
    this.string2=string2;
    this.operator=operator;
  }
+ 
  public Activity(){}
+
 
 }
 
@@ -61,16 +63,16 @@ public class Source {
   
 
 
-	public static void main(String args[])throws Exception {
+	// public static void main(String args[])throws Exception {
     
-    Activity a=new Activity("HelloWorldLetsLearn", "World", "-");
-    Source source=new Source();
-    String result=source.handleException(a);
-    System.out.println(result);
+  //   Activity a=new Activity("HelloWorldLetsLearn", "World", "-");
+  //   Source source=new Source();
+  //   String result=source.handleException(a);
+  //   System.out.println(result);
 
-    result=source.doOperation(a);
-    System.out.println(result);
+  //   result=source.doOperation(a);
+  //   System.out.println(result);
 
 
-	}
+	// }
 }
