@@ -33,11 +33,11 @@ public class TraineeServlet extends HttpServlet {
 		String []languages=request.getParameterValues("languages");
 		
 		Trainee trainee=new Trainee(traineeName, email, gender, languages);
-		ServletContext context=getServletContext();
-		context.setAttribute("trainee", trainee);
+//		ServletContext context=getServletContext();
+//		context.setAttribute("trainee", trainee);
 		HttpSession session=request.getSession();
 		session.setAttribute("trainee", trainee);
-		response.sendRedirect("show");
+		response.sendRedirect("show-trainee.jsp");
 		
 //		RequestDispatcher dispatcher=request.getRequestDispatcher("show");
 //		

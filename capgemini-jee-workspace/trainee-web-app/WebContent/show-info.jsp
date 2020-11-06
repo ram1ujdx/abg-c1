@@ -8,7 +8,6 @@
 </head>
 <body>
 
-<h2>Current Date/Time - <p style="color: navy;"> <%=new java.util.Date() %></p></h2>
-<%@include file="show-info.jsp" %>
+<h2>Host info - <p style="color: red;"> <%=request.getRemoteHost()%>
 </body>
 </html>
