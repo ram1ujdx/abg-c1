@@ -37,7 +37,7 @@ public class StudentServiceImpl implements IStudentService{
 
 	@Override
 	public boolean deleteStudent(String studentId) throws SQLException {
-		return true;
+		return repo.deleteStudent(studentId);
 	}
 
 	@Override

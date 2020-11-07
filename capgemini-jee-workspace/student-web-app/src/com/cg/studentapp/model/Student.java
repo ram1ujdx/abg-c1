@@ -1,10 +1,17 @@
 package com.cg.studentapp.model;
 
-public class Student {
+import java.io.Serializable;
+
+public class Student implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2346466766452139177L;
 	private String studentId;
 	private String studentName;
 	private float marks;
 	private long phoneNo;
+	
 	
 	public Student() {
 		// TODO Auto-generated constructor stub

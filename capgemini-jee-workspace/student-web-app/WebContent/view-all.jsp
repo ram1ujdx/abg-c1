@@ -1,3 +1,5 @@
+<%@page import="java.util.List"%>
+<%@page import="com.cg.studentapp.model.Student"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1" isELIgnored="false"%>
 <!DOCTYPE html>
@@ -23,14 +25,18 @@
 		<th>Phone No.</th>
 	</tr>
 	
+	<% 
+	for(Student student:(List<Student>)session.getAttribute("students")){
+		out.print("<tr>");
+		out.print("<td>"+student.getStudentId()+"</td>");
+		out.print("<td>"+student.getStudentName()+"</td>");
+		out.print("<td>"+student.getMarks()+"</td>");
+		out.print("<td>"+student.getPhoneNo()+"</td>");
+		out.print("<td><a href='delete?studentId="+student.getStudentId()+"'>Delete</a></td>");
+		out.print("</tr>");
+	}
 	
-	<tr>
-		<td>${student.studentId}</td>
-		<td>${student.studentId} </td>
-		<td>${student.marks} </td>
-		<td>${student.phoneNo} </td>
-	</tr>
-	
+	%>
 	</table>
 	
 

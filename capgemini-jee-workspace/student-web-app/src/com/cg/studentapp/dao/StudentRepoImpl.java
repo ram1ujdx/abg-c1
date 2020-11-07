@@ -68,6 +68,14 @@ public class StudentRepoImpl implements IStudentRepo{
 		return students;
 	}
 
+	@Override
+	public boolean deleteStudent(String studentId) throws SQLException {
+		Student oldStudent=getStudentById(studentId);
+		psmt=connection.prepareStatement("delete from student where id=?");
+		psmt.setString(1, studentId);
+		int deleted=psmt.executeUpdate();
+		return deleted>0;
+	}
 	
 	
 }

@@ -11,6 +11,9 @@
 <div class="container">
 <div class="row">
 <div class="col-12">
+<jsp:include page="header.jsp"></jsp:include>
+</div>
+<div class="col-12">
 <form class="form-group" action="add-student" method="post">
 <label for="studentId">Enter ID</label>
 <input type="text" name="tstudentId" class="form-control">

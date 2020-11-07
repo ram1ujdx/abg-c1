@@ -10,7 +10,7 @@ public interface IStudentRepo {
 	Student addStudent(Student student) throws SQLException;
 	Student getStudentById(String studentId) throws SQLException;
 	List<Student> getAllStudent() throws SQLException;
-	
+	boolean deleteStudent(String studentId) throws SQLException;
 	
 	
 	
