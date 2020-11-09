@@ -3,10 +3,16 @@ package com.cg.studentapp.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "student_data")
+@NamedQueries({
+		@NamedQuery(name ="findByName" , query = "from Student where studentName=:studentName"),
+			@NamedQuery(name="findByMarksRange", query = "from Student s where s.marks>=:minMarks and s.marks<=:maxMarks")
+			})
 public class Student {
 
 	@Id
