@@ -1,0 +1,14 @@
+<label for="tname">Enter Name</label>
+<input type="text" class="form-control"  [(ngModel)]="name" #tname>
+<button class="btn btn-outline-dark" (click)="show(tname.value)"
+                  [disabled]="isDisabled">Enter</button>
+
+<h3 *ngIf="name">Hello {{name}}</h3>
+
+<h3>
+<ul>
+    <li *ngFor="let personName of nameList" [ngStyle]="{backgroundColor:personName.length>5?'red':'green'}">
+        {{personName}}
+    </li>
+</ul>
+</h3>

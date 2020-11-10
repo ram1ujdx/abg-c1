@@ -1,0 +1,15 @@
+header{
+    min-height: 150px;
+    background-color: gray;
+    color: whitesmoke;
+}
+
+footer{
+    min-height: 100px;
+    background-color:cornflowerblue;
+    color:azure;
+}
+
+main{
+    min-height: 400px;
+}
