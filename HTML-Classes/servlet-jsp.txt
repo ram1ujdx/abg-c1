@@ -1,0 +1,34 @@
+What is Correct about Service() method	The service() method is called when the Servlet is called first time ONLY.	The service() method is called everytime the Servlet is called.	Both of the above.	None of the above.			B
+Which one of the given statement is correct about init() method	The init() method is called when the Servlet is called first time ONLY.	The init() method is called everytime the Servlet is called.	Both of the above.	None of the above.			A
+Which of the following code is used to get names of the attributes in servlet?	response.getAttributeNames()	request.getAttributeNames()	header.getAttributeNames()	None of the above.			B
+When we are sendig data in URL in get method, How to separate path and parameter?	Question Mark	Semicolon	Ampersand	None of the above.			A
+Which http method send by browser that gives the server, what user data typed in the form?	Put	Post	Send	None of the above.			B
+Which http method send by browser that asks the server to get the page only?	Put	Page	Get	Data			C
+What is the full form of MIME type?	Multipurpose Internet Mail Extensions	Multiple Internet Mail Extension	Mail Internet Multipurpose Extension	Mail Internet Multiple Extension			A
+What is true about MIME Type?	It tells about the browser what type of data browser will receive	It tells the server what type of data server will recieve	Both of the above.	None of the above			A
+
+Why use Request Dispatcher to forward a request to another resource, instead of using a sendRedirect? 	The RequestDispatcher does not use the reflection API	Redirects are no longer supported in the current servlet API	Redirects are not a cross-platform portable mechanism	The RequestDispatcher does not require a round trip to the client, and thus is more efficient and allows the server to maintain request state			D
+Which of the below is not a session tracking method?	URL rewriting	History	Cookies	SSL sessions			B
+Which of the following is stored in client browser?	 URL rewriting	Hidden form fields	SSL sessions	Cookies			D
+Which of the following leads to high network traffic?	URL rewriting	Hidden form fields	SSL sessions	Cookies			A
+Which of the following is not wrong about session?	All users connect to the same session	All users have same session variable	Default timeout value for session variable is 20 minutes	New session cannot be created for a new user			C
+SessionIDs are stored in cookies.	True 	FALSE					B
+What is the maximum size of a cookie?	4 KB	4 MB	4 Bytes	40 KB			A
+Cookies are ?	client side	server side	none	both B&C			A
+HttpSessions are?	client side	server side	none	both B&C			B
+URL rewriting is a type of ____________________	field	form	hiddenform field	all			C
+How to set an attribute of an session object?	get	set	put	setAttribute()			D
+Hot to get an object of session?	get	set	put	none			D
+
+
+An advantage of using JavaScript is _____________________________________	 Less server interaction	Immediate feedback to the visitors	 Increased interactivity	All of the above.			D
+ Which type of variable is visible everywhere in your JavaScript code?	instance variable	 local variable	 Both of the above.	 None of the above.			A
+Which built-in method calls a function for each element in the array?	 while()	 loop()	 forEach()	None of the above.			C
+The difference between Servlets and JSP is the ……………. 	Translation	Compilation	Syntax	All of the above			C
+Which of the following are the valid scopes in JSP? 	request, page, session, application	request, page, session, global	response, page, session, application	request, page, context, application			A
+
+ Which technology do we mix our business logic with our presentation logic?	Servlet	JSP	Both A & B	None of the above			A
+Which is the Microsoft solution for providing dynamic Web content? 	ASP	JSP	Both A & B	None of the above			A
+A bean encapsulates many objects into one object, so we can access this object from multiple places	True 	FALSE					A
+Why DB connections are not written directly in JSPs?	Response is slow	Not a standard J2EE architecture	Load Balancing is not possible	both B and C			D
+A JSP page consists of which tags? 	HTML	JSP tags	 Both A & B	 None of the above			C
