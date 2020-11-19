@@ -9,5 +9,6 @@ public class App {
 	static Logger myLogger=LogManager.getLogger(App.class);
 	public static void main(String[] args) {
 		myLogger.info("Error");
+		myLogger.warn("This is a Sample Warnimg");
 	}
 }

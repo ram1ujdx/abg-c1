@@ -5,6 +5,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -28,9 +29,12 @@ public class StudentController extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		logger.info("Student Created");
-		logger.error("Error...");
-		logger.warn("Warning");
+		
+		String userType=request.getParameter("userType");
+		
+		request.setAttribute("userType", userType);
+		logger.info("User Ser to "+userType);
+		request.getRequestDispatcher("show.jsp").forward(request, response);
 		
 	}
 
