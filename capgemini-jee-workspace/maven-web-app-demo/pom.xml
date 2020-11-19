@@ -7,6 +7,12 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>maven-web-app-demo Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
+  <properties>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
   <dependencies>
   
   <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
@@ -38,5 +44,6 @@
   </dependencies>
   <build>
     <finalName>maven-web-app-demo</finalName>
+   
   </build>
 </project>
