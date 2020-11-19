@@ -8,6 +8,15 @@
 
 </head>
 <body>
+<%
+if(session.getAttribute("loggedIn")==null){
+	response.sendRedirect("login.jsp");
+}
+response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+
+%>
+
+<a href="logout">Logout</a>
 
 <button id="btnAdmin" disabled>Admin</button>
 <button id="btnUser" disabled>User</button>
