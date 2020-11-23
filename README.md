@@ -17,9 +17,9 @@ class PolicyQuestionsRepoImplTest {
 	
 	@Test
 	void testCreatePolicyQuestions() {
-		//PolicyQuestions questions=new PolicyQuestions(polQuesId, polQuesSeq, polQuesDesc, polQuesAns1, polQuesAns2, polQuesAns3, polQuesAns4, polQuesAns1Weightage, polQuesAns2Weightage, polQuesAns3Weightage, polQuesAns4Weightage)
-		//PolicyQuestions savedQuestion=repo.createPolicyQuestions(policyQuetions);
-		//assertEquals(questions, savedQuestion);
+		PolicyQuestions questions=new PolicyQuestions(polQuesId, polQuesSeq, polQuesDesc, polQuesAns1, polQuesAns2, polQuesAns3, polQuesAns4, polQuesAns1Weightage, polQuesAns2Weightage, polQuesAns3Weightage, polQuesAns4Weightage)
+		PolicyQuestions savedQuestion=repo.createPolicyQuestions(policyQuetions);
+		assertEquals(questions, savedQuestion);
 	}
 
 	@Test
