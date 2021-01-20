@@ -1,4 +1,4 @@
-# cpgemini-abridged-batch
+
 ## Test Case Example
 
 ```java
